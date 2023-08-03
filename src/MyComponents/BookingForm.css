@@ -1,0 +1,31 @@
+.padding {
+    width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+}
+.article-container {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    float: left;
+    flex-grow: 1;
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.article:after {
+    content: "";
+    flex: auto;
+}
+.article:nth-child(odd) {
+    clear: left;
+}
